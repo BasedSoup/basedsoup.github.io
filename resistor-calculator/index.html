@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+</link>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistance Calculator</title>
+
+<body class="MainSelects">
+    <div class="content">
+    <h1>4 Band Resistor</h1>
+    <label for="band1">Band 1:</label>
+    <div class="custom-select">
+        <select onchange="bandColour(1)" name="band1" id="band1">
+            <option class="Black" value=0>Black 0</option>
+            <option class="Brown" value=1>Brown 1</option>
+            <option class="Red" value=2>Red 2</option>
+            <option class="Orange" value=3>Orange 3</option>
+            <option class="Yellow" value=4>Yellow 4</option>
+            <option class="Green" value=5>Green 5</option>
+            <option class="Blue" value=6>Blue 6</option>
+            <option class="Violet" value=7>Violet 7</option>
+            <option class="Grey" value=8>Grey 8</option>
+            <option class="White" value=9>White 9</option>
+        </select>
+    </div>
+    <br>
+    <label for="band2">Band 2:</label>
+    <br>
+    <div class="custom-select">
+        <select onchange="bandColour(2)" name="band2" id="band2">
+            <option class="Black" value=0>Black 0</option>
+            <option class="Brown" value=1>Brown 1</option>
+            <option class="Red" value=2>Red 2</option>
+            <option class="Orange" value=3>Orange 3</option>
+            <option class="Yellow" value=4>Yellow 4</option>
+            <option class="Green" value=5>Green 5</option>
+            <option class="Blue" value=6>Blue 6</option>
+            <option class="Violet" value=7>Violet 7</option>
+            <option class="Grey" value=8>Grey 8</option>
+            <option class="White" value=9>White 9</option>
+        </select>
+    </div>
+    <br>
+    <label for="multiplier">Multiplier:</label>
+    <br>
+    <div class="custom-select">
+        <select onchange="bandColour(3)" name="multiplier" id="multiplier">
+            <option class="Black" value=1>Black 1Ω</option>
+            <option class="Brown" value=10>Brown 10Ω</option>
+            <option class="Red" value=100>Red 100Ω</option>
+            <option class="Orange" value=1000>Orange 1KΩ</option>
+            <option class="Yellow" value=10000>Yellow 10KΩ</option>
+            <option class="Green" value=100000>Green 100KΩ</option>
+            <option class="Blue" value=1000000>Blue 1MΩ</option>
+            <option class="Violet" value=10000000>Violet 10MΩ</option>
+            <option class="Grey" value=100000000>Grey 100MΩ</option>
+            <option class="White" value=1000000000>White 1GΩ</option>
+            <option class="Gold" value=0.1>Gold 0.1Ω</option>
+            <option class="Silver" value=0.01>Silver 0.01Ω</option>
+        </select>
+    </div>
+    <br>
+    <label for="tolerance">Tolerance:</label>
+    <br>
+    <div class="custom-select">
+        <select onchange="bandColour(4)" name="tolerance" id="tolerance">
+            <option class="Brown" value=1>Brown</option>
+            <option class="Red" value=2>Red</option>
+            <option class="Green" value=0.5>Green</option>
+            <option class="Blue" value=0.25>Blue</option>
+            <option class="Violet" value=0.1>Violet</option>
+            <option class="Grey" value=0.05>Grey</option>
+            <option class="Gold" value=5>Gold</option>
+            <option class="Silver" value=10>Silver</option>
+        </select>
+    </div>
+    <br><br>
+     <input type="submit" value="Calculate Resistance" name="submit" id="result" onclick="submit()">
+     <h1></h1>
+<canvas id="resistorCanvas" width="600" height="200"></canvas>
+</div></body>
+<!-- <a href="cats/index.html"><button>🐈🐈 Click For Cats 🐈🐈</button></a> -->
+</head>
+<script src="script.js"></script>
+
+</html>
