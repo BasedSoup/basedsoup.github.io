@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="style.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 class="Title">Sign Up</h1>
+<form>
+    <div class="details">
+        <div id="usernamefield">
+            Username:<br><input id="username" name="username" type="username" placeholder="Username"><br>
+        </div>
+        <div id="cnamefield">
+            First Name:<br><input id="cname" name="cname" type="text" placeholder="First Name"><br>
+        </div>
+        <div id="snamefield">
+            Surname:<br><input id="sname" name="sname" type="text" placeholder="Surname"><br>
+        </div>
+        <div id="emailfield">
+            Email:<br><input id="email" name="email" type="email" placeholder="Email"><br>
+        </div>
+        <div id="passwordfield">
+            Password (8 Chars):<br><input id="password" name="password" type="password" placeholder="Password"><br>
+        </div>
+        <div id="confpasswordfield">
+            Confirm Password:<br><input id="confpassword" name="confpassword" type="password" placeholder="Confirm Password"><br>
+        </div>
+    </div>
+    <br>
+    <label id="genderfield">
+        Gender:
+    </label><br>
+    <div class="gender">
+        Male<input name="answer" id="male" type="radio" value="Male"/><br>
+        Female <input name="answer" id="female" type="radio" value="Female"/><br>
+        Other <input name="answer" type="radio" value="other"/>
+        <input id="otherAnswer" name="otherAnswer" style="display:none;" type="text" placeholder="Other"/>
+    </div>
+    <button type="button" onclick="Submit();">Sign Up</button>
+</form>
+</body>
+<script src="jquery.js"></script>
+<script src="script.js"></script>
+</html>
